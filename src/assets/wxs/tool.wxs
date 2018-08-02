@@ -1,0 +1,11 @@
+
+var name = 'gg';
+
+function showName(str) {
+    console.log(str || name);
+}
+
+module.exports = {
+    name: 'ffff',
+    showName: showName
+};

@@ -1,0 +1,63 @@
+.container.wait {
+    flex-flow: wrap;
+}
+
+.wait-tip {
+    margin: 50rpx auto;
+    width: 210px;
+}
+
+.wait-sign {
+    margin-top: 30rpx;
+    width: 100%;
+    padding: 20rpx;
+    background-color: #fff;
+}
+
+.wait-sign__op {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 25rpx;
+    background-color: #fff;
+}
+
+.wait-sign__op text {
+    width: 100%;
+}
+
+.wait-sign__op label {
+    align-self: flex-end;
+}
+
+.wait-sign image {
+    margin-right: 20rpx;
+    width: 32rpx;
+    height: 32rpx;
+    vertical-align: middle;
+}
+
+.wait-sign__items {
+    margin-top: 30rpx;
+    margin-bottom: 30rpx;
+    width: 100%;
+    background-color: #fff;
+}
+
+.wait-sign__item {
+    padding: 20rpx;
+    border-bottom: 1px solid #eee;
+}
+
+.wait-sign__num {
+    font-size: 20px;
+    color: #1296db !important;
+}
+
+.wait-sign__item text {
+    color: #999;
+}
+
+.wait-sign__item view:not(:last-child) {
+    margin-bottom: 10rpx;
+}

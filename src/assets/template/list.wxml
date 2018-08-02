@@ -1,0 +1,15 @@
+<template name="abc">
+    <view class="aa">{{dataStr}}</view>
+</template>
+
+<template name="list-left">
+    <view class="bb" wx:for="{{dataArray}}" wx:key="{{index}}">
+        <view>{{item}}</view>
+    </view>
+</template>
+
+<template name="list-right">
+    <view class="ccc" wx:for="{{dataObject}}" wx:key="{{index}}">
+        <view>{{item.id}}: {{item.name}}</view>
+    </view>
+</template>

@@ -1,0 +1,25 @@
+
+<view class='container wait'>
+    <view class='wait-tip'>
+        欢迎前来办证大厅，请耐心等待...
+    </view>
+
+    <view class="wait-sign__op">
+        <text>仅显示我的</text>   
+        
+        <label>
+            <switch bindchange="onlyShowMyWait" color='#1296db' />
+        </label>           
+    </view>
+
+    <view class='wait-sign__items'>
+        <view class='wait-sign__item' wx:for="{{waitSigns}}" data-my="{{item.my}}" wx:key="{{index}}">
+            <view>场次：<text>{{item.group}}</text></view>
+            <view>桌号：<text>{{item.no}}</text></view>
+            <view>等候人数：
+                <text class='wait-sign__num' wx:if="{{item.num >= 0}}">{{item.num}} 人</text>
+                <text class='wait-sign__num' wx:if="{{item.num < 0}}">空闲</text>
+            </view>
+        </view>
+    </view>
+</view>

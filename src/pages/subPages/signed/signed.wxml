@@ -1,0 +1,15 @@
+
+<view class='container wait'>
+    <view class='wait-tip'>
+        签到成功！
+    </view>
+
+    <view class='history-sign__items'>
+        <view class='history-sign__item' wx:for="{{historySigns}}" wx:key="{{index}}">
+            <view>场次：<text>{{item.group}}</text></view>
+            <view>姓名：<text>{{item.name}}</text></view>
+            <view>电话：<text>{{item.tel}}</text></view>
+            <view>时间：<text>{{item.time}}</text></view>
+        </view>
+    </view>
+</view>

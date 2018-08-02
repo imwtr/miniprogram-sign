@@ -1,0 +1,68 @@
+@import "../../assets/scss/variable";
+@import "../../assets/scss/g";
+
+.sign {
+    /* margin-top: 200rpx; */
+    width: 100%;
+}
+
+.sign__item {
+    label {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 26rpx;
+        margin-top: 30rpx;
+        background-color: $white;
+    }
+
+    label input {
+        width: 70%;
+    }
+
+    label icon {
+        z-index: 9999999;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100rpx;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    label icon[hidden] {
+        display: none;
+    }
+
+    label text {
+        margin-right: 30rpx;
+        width: 120rpx;
+        text-align: right;
+    }
+
+    .arrow-right {
+        position: absolute;
+        top: 30rpx;
+        right: 30rpx;
+        width: 36rpx;
+        height: 36rpx;
+    }
+}
+
+.sign__group {
+    display: none;
+}
+
+.sign__submit {
+    margin: 80rpx auto;
+    width: 90%;
+    line-height: 2.8;
+    background-color: $blue !important;
+    font-size: 16px;
+
+    &[loading][disabled] {
+        background-color: $blue !important;
+    }
+}

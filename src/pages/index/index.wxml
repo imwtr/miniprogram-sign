@@ -1,0 +1,40 @@
+
+<view class="container">
+    <form class="sign" bindsubmit="formSubmit">
+        <view class="sign__item">
+            <label>
+                <text>手机号</text>
+                <input class="sign__tel" type="number" name="tel" placeholder="请输入手机号" bindinput='telChange' value='{{tel}}'  maxlength='11' />
+                <icon hidden='{{telClearHidden}}' type='clear' size="18" bindtap='clearTelField' />
+            </label>
+        </view>
+        <view class="sign__item">
+            <label>
+                <text>姓名</text>
+                <input class="sign__name" type="text" name="name" placeholder="请输入姓名" bindinput='nameChange' value='{{name}}' maxlength='100' />
+                <icon hidden='{{nameClearHidden}}' type='clear' size="18" bindtap='clearNameField' />
+            </label>
+        </view>
+        <view class="sign__item">
+            <picker mode="selector" range="{{group}}" bindchange="groupChange">
+                <label class='f-p-32'>
+                    <text class='f-w-112rpx'>场次</text>
+                    <input class="sign__group"  type="text" name="group" value="{{groupSelected}}"/>
+                    <view>{{groupSelected}}</view>
+                    <image class="arrow-right" src="../../assets/imgs/arow_right.png" mode='right' />
+                </label>
+            </picker>
+        </view>
+        <view class="sign__item">
+            <label>
+                <text>刷脸</text>
+                <view bindtap="chooseFace" class="f-color-blue">{{face ? '已' : ''}}选择</view>
+                <view wx:if="{{face}}" bindtap="previewFace" class="f-color-blue f-ml-20">预览</view>
+                <view wx:if="{{face}}" bindtap="resetFace" class="f-color-blue f-ml-20">重置</view>
+            </label>
+        </view>
+        <view class="sign__btns">
+            <button class="sign__submit" type="primary" form-type="submit" loading="{{signing}}" disabled="{{signing}}">提交</button>
+        </view>
+    </form>
+</view>

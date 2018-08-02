@@ -1,0 +1,46 @@
+.container.wait {
+    flex-flow: wrap;
+}
+
+.wait-tip {
+    margin: 50rpx auto;
+    width: 100px;
+    font-size: 20px;
+    color: #1296db;
+}
+
+.history-sign,
+.goto-sign {
+    margin-top: 30rpx;
+    width: 100%;
+    padding: 20rpx;
+    background-color: #fff;
+}
+
+.history-sign image,
+.goto-sign image {
+    margin-right: 20rpx;
+    width: 32rpx;
+    height: 32rpx;
+    vertical-align: middle;
+}
+
+.history-sign__items {
+    margin-top: 30rpx;
+    margin-bottom: 30rpx;
+    width: 100%;
+    background-color: #fff;
+}
+
+.history-sign__item {
+    padding: 20rpx;
+    border-bottom: 1px solid #eee;
+}
+
+.history-sign__item text {
+    color: #999;
+}
+
+.history-sign__item view:not(:last-child) {
+    margin-bottom: 10rpx;
+}
