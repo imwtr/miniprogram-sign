@@ -1,0 +1,40 @@
+{
+  "name": "sign",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:prod": "gulp build:prod",
+    "build:clean": "gulp build:clean",
+    "watch:clean": "gulp watch:clean",
+    "start": "npm run watch:clean"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.6.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "del": "^2.2.2",
+    "empty-folder": "^2.0.2",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-filter": "^5.1.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-jsonminify": "^1.0.0",
+    "gulp-load-plugins": "^1.4.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.2.1",
+    "gulp-tap": "^1.0.1",
+    "gulp-uglify": "^2.0.0",
+    "run-sequence": "^1.2.2"
+  }
+}
