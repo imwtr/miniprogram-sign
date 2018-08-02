@@ -11,7 +11,7 @@
 
 使用 [Gulp](https://www.gulpjs.com.cn/) 进行构建，主要为了支持SCSS语法，以及做一些文件压缩
 
-使用 [wxPromise](https://github.com/youngjuning/wxPromise) 对小程序的API进行API化，同时支持 `async/await`
+使用 [wxPromise](https://github.com/youngjuning/wxPromise) 对小程序的API进行Promise化，同时支持 `async/await`
 
 `dist` 目录为小程序使用的文件目录，在小程序开发者工具种导入这个目录，进行编译查看
 
@@ -24,6 +24,7 @@
 > npm i
 
 > npm start
+
 
 **自配置部分**
 
